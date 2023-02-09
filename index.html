@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Vazirmatn:wght@100&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+            integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <div class="main-app">
+            <div class="header">
+                <div class="container">
+                    <div class="header-wrapper">
+                        <div class="header-image">
+                            <img src="./images/logo.png" alt="" />
+                            <p>
+                                Let's get shit done!
+                                <img src="./images/hiImage.png" alt="" />
+                            </p>
+                        </div>
+                        <div class="header-action-create">
+                            <i class="fas fa-plus"></i>
+                            <span>New Task</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="todos">
+                <div class="container">
+                    <div class="todos-wrapper">
+                        <div class="todo-item-inner">
+                            <div class="todo-item-inner-border">
+                                <div class="todo-item-inner-title">
+                                    <div class="text"><p>Todo</p></div>
+                                    <div class="count-todo" id="todo">
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-todo"></div>
+                        </div>
+                        <div class="todo-item-inner">
+                            <div class="todo-item-inner-border doing">
+                                <div class="todo-item-inner-title">
+                                    <div class="text"><p>Doing</p></div>
+                                    <div class="count-todo" id="doing">
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-todo doing"></div>
+                        </div>
+                        <div class="todo-item-inner">
+                            <div class="todo-item-inner-border finished">
+                                <div class="todo-item-inner-title">
+                                    <div class="text"><p>Finished</p></div>
+                                    <div class="count-todo" id="finished">
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-todo finished"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="task-form">
+                <h1 class="title">Add new todo</h1>
+                <form action="">
+                    <div class="form-group">
+                        <input
+                            id="input-element"
+                            type="text"
+                            placeholder="Category Etc : Marketing"
+                            name="category"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            id="input-element"
+                            type="text"
+                            placeholder="Title"
+                            name="title"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <textarea
+                            id="input-element"
+                            name="content"
+                            id=""
+                            cols="30"
+                            rows="10"
+                            placeholder="Content"
+                        ></textarea>
+                    </div>
+                    <div class="status">
+                        <div class="status-item">
+                            <input
+                                type="radio"
+                                id="Todo"
+                                name="status"
+                                value="TODO_TYPE"
+                            />
+                             <label for="Todo">Todo</label><br />
+                        </div>
+                        <div class="status-item">
+                            <input
+                                type="radio"
+                                id="Doing"
+                                name="status"
+                                value="TODO_DOING_TYPE"
+                            />
+                             <label for="Doing">Doing</label><br />
+                        </div>
+                        <div class="status-item">
+                            <input
+                                type="radio"
+                                id="Finished"
+                                name="status"
+                                value="TODO_FINISHED_TYPE"
+                            />
+                             <label for="Finished">Finished</label><br />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+                <div class="icon-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <script src="./handle/handle.js" type="text/javascript"></script>
+    </body>
+</html>
